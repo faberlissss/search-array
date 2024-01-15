@@ -14,8 +14,8 @@ console.log('Сума:' + sum);
 
 console.log('Знайти мінімальний елемент масиву та його порядковий номер.');
 let index = 0;
-let element = 0;
-for (let i = 0; i < a.length; i++) {
+let element = a[0];
+for (let i = 1; i < a.length; i++) {
     if (a[i] < element) {
         element = a[i];
         index = i;
@@ -80,7 +80,7 @@ for (let l = 0; l < a.length; l++) {
 }
 console.log(mult);
 console.log('Знайти найбільший серед елементів масиву, остальні обнулити.');
-let element3 = 0;
+let element3 = a[0];
 for (let v = 1; v < a.length; v++){
     if (a[v] > element3) {
         element3 = a[v];
@@ -92,6 +92,8 @@ for (let v = 0; v < a.length; v++) {
     }
 }
 console.log(a);
+
+
 
 
 
